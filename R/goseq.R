@@ -76,7 +76,7 @@ goseq=function(pwf,genome,id,gene2cat=NULL,test.cats=c("GO:CC","GO:BP","GO:MF"),
 		gene2cat=gene2cat[names(gene2cat)%in%rownames(pwf)]
 
 		#Rebuild because it's a fun thing to do
-		cat2gene=reversemapping(gene2cat)
+		#cat2gene=reversemapping(gene2cat)
 		gene2cat=reversemapping(cat2gene)
 
 		## make sure we remove duplicate entries .. e.g. see 
